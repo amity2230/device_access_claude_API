@@ -8,3 +8,7 @@ dist/
 build/
 uv.lock
 .claude/
+
+# Device credentials — keep out of version control
+devices/*.toml
+devices.yaml

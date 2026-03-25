@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "device-mcp": {
+      "command": "python",
+      "args": ["device_mcp.py"],
+      "cwd": "c:/Custom-MCP/device-mcp",
+      "env": {
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+      }
+    }
+  }
+}

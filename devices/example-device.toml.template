@@ -1,0 +1,24 @@
+# To add a new device:
+# 1. Copy this file and rename it to <device-name>.toml  (e.g. my-router.toml)
+# 2. Fill in the fields below
+# 3. Restart the MCP server — the device is picked up automatically
+#
+# Required fields: host, device_type, username, password
+# Optional fields: description, secret (enable password for Cisco), port, timeout
+#
+# Supported device_type values (Netmiko):
+#   linux, cisco_ios, cisco_xe, cisco_xr, cisco_nxos,
+#   arista_eos, juniper_junos, paloaltonetworks_panos, etc.
+
+host        = "192.168.1.1"
+device_type = "cisco_ios"
+username    = "admin"
+password    = "your_password"
+description = "My Router"
+
+# Optional — only needed for Cisco enable password:
+# secret = "enable_password"
+
+# Optional — override defaults:
+# port    = 22
+# timeout = 10
